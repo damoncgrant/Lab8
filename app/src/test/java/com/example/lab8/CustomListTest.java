@@ -60,9 +60,9 @@ public class CustomListTest {
     public void getCountTest() {
         list = MockCityList();
         City mockCity = new City("TestCity", "TestProvince");
-        assertEquals(list.getCount(), 0);
+        assertEquals(0, list.getCount());
         list.addCity(mockCity);
-        assertEquals(list.getCount(), 1);
+        assertEquals(1, list.getCount());
     }
 
 }
